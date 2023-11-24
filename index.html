@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link type="text/css" href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/whiteLogo.png" alt="Bootstrap" width="150" height="45">
+            </a>
+            <div class="navbar-text">
+                <div class="signIn" id="modalBtn">Sign In</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row align-items-start">
+            <!-- <div class="col-sm-6" style="margin-top: 1%;" >
+                <div class="col-sm-6 "> <img class="refaranceImage" src="assets/images/Image1.jpg"> </div>
+                <div class="col-sm-6 "> <img class="refaranceImage" src="assets/images/referance.jpg"> </div>
+            </div> -->
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6" style="margin-top: 1%;">
+                    <div id="image-comparison-slider">
+                        <img src="/assets/images/image11.jpg" alt="before">
+                        <div class="img-wrapper">
+                            <img src="/assets/images/image22.jpg" alt="after">
+                        </div>
+                        <span class="label label-before">Before</span>
+                        <span class="label label-after">After</span>
+                        <div class="handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-chevron-left"></i>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="handle-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="upload-container">
+                        <h2>Fotoğrafını Yükle</h2>
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                            <input type="file" name="photo" id="photo" accept="image/*">
+                            <button type="submit">Yükle</button>
+                        </form>
+                        <div class="image-container">
+                            <img src="/assets/images/image11.jpg" width="150" alt="">
+                            <img src="/assets/images/image11.jpg" width="150" alt="">
+                            <img src="/assets/images/image11.jpg" width="150" alt="">
+                            <img src="/assets/images/image11.jpg" width="150" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <!-- Modal içeriği -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="/submit-your-form">
+                <label for="fname">Ad:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Soyad:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Gönder">
+            </form> 
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
